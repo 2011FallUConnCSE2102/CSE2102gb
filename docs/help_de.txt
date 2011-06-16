@@ -1,0 +1,27 @@
+{-{bJMEBoy Hilfe}
+ 
+{uSpiele für den Emulator verfügbar machen}
+Bevor Sie ein Gameboy-Spiel starten können, muß dem Emulator mitgeteilt werden welche Spiele auf dem Gerät vorhanden sind. Im Gegensatz zu einem PC kann ein J2ME-basiertes mobiles Gerät allerdings nicht einfach auf das Dateisystem zugreifen.
+Wenn Ihr mobiles Gerät die Java-Spezifikation JSR-75 (FileConnection and PIM API) unterstützt, dann können Sie auf dem Gerät nach Gameboy-Spielen suchen und die gefundenen Spiele laden. Dies muß nur einmal durchgeführt werden, oder nachdem Sie weitere Spiele auf Ihr Gerät kopiert haben. Diese Suche wird über den Menüeintrag 'Spiele suchen' / 'Gameboy-Spiele auf dem Gerät suchen' gestartet, welcher vorhanden ist, wenn Ihr Gerät die oben angegebene Java-Spezifikation unterstützt. Dateien mit den folgenden Dateiendungen werden dann auf dem Gerät gesucht: .gb, .gbc, .cgb.
+Sollte Ihr Gerät die JSR-75-Spezifikation nicht unterstützen, ist ein wenig mehr zu tun. Aber auch diese Arbeit muß nur einmal getan werden. Was getan werden muß, ist eine Änderung der auf dem Gerät zu installierenden jar-Datei. In dieser muß ein Verzeichnis "programs" angelegt werden und alle gewünschten Gameboy-ROMs müssen diesem Verzeichnis hinzugefügt werden. Außerdem muß eine Datei "programs.txt" in diesem Verzeichnis erstellt werden und alle ROM-Namen müssen in dieser Datei aufgeführt werden, jeder Name in einer neuen Zeile. Die so geänderte Datei muß dann auf dem Gerät installiert werden.
+ 
+{uEin Spiel laden und starten}
+Sie können ein Spiel über den Menüeintrag 'Starten' / 'Spiel starten' laden und starten bzw. auch über den gleichnamigen Button. Dies öffnet einen Dialog, in dem das zu ladende Spielmodul ausgewählt werden kann. Der Dialog listet alle Spiele auf, die in der programs.txt-Datei gefunden werden konnten sowie die Dateien, die in einer Suche des Dateisystems gefunden wurden. Die Auswahl eines Spiels startet dieses.
+ 
+{uJoypad-Eingabe}
+Die Navigations-Tasten des Gerätes werden für die Joypad-Navigation verwendet. Die Gameboy-Buttons werden über die folgenden Tasten emuliert:
+- Gameboy button 'A': "a" or "1"
+- Gameboy button 'B': "b" or "3"
+- Gameboy button 'Select': Enter or "7"
+- Gameboy button 'Start': Space or "9"
+
+Wenn diese vorgegebene Zuordnung nicht angemessen erscheint, können über den Menüpunkt 'Joypad' / 'Tasten für Joypad-Emulation zuordnen' die Tasten auch individuell zugeordnet werden.
+ 
+{uEmulator settings}
+Für Details zu den Emulator-Einstellungen schauen Sie bitte in der Wiki-Hilfe des Projektes unter 
+{hhttp://sourceforge.net/apps/mediawiki/javagb/index.php?title=JMEBoy_Online_Help} nach.
+ 
+{uVerschiedenes}
+Über den Menüeintrag 'Protokoll anzeigen' können Sie Warnungen und Informationen des Emulators ansehen. Dies beinhaltet auch Messungen zur Geschwindigkeit der Emulation im Verhältnis zu einem "echten" Gameboy.
+ 
+Viel Spaß mit dem Emulator!}

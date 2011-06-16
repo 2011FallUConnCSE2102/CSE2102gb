@@ -1,0 +1,24 @@
+{-{bAjuda do JMEBoy}
+ 
+{uTornando os jogos disponíveis para o emulador}
+Antes que você possa executar um jogo do Gameboy, é necessário dizer ao emulador quais jogos estão disponíveis no dispositivo móvel. Diferentemente de um PC, um dispositivo móvel baseado em J2ME não pode acessar facilmente o sistema de arquivos do aparelho para carregar um jogo.
+Se o seu dispositivo móvel suporta a especificação JSR-75 (FileConnection e PIM API), você poderá pesquisar os jogos de Gameboy existentes em seu dispositivo móvel e depois carregá-los. É necessário que isso seja feito toda vez que você acrescentar mais jogos no aparelho. Para fazer essa pesquisa acesse o menu 'File-system search start directory', que estará disponível se seu dispositivo suportar a especificação mencionada anteriormente. As seguintes extensões de arquivo são suportadas atualmente no carregamento de programas: .gb, .gbc e .cgb.
+Se o seu dispositivo não suportar a especificação JSR-75 você terá um pouco mais de trabalho. Mas neste caso, este trabalho tem que ser feito apenas uma vez. Será necessário modificar o arquivo jar do JMEBoy. O diretório "programs" terá que ser adicionado e todos os arquivos ROMs terão que ser adicionados nesse diretório. Além disso, um arquivo "programs.txt" deverá existir nesse diretório e todos os nomes dos arquivos das ROMs deverão estar listados nesse arquivo, cada jogo em uma linha. Este arquivo jar modificado terá que ser instalado no dispositivo móvel. 
+ 
+{uCarregando e iniciando um jogo}
+Você pode carregar um jogo usando o menu 'Carregar cartucho' ou através do botão 'Jogar'. Uma tela será exibida e você poderá selecionar o cartucho de Gameboy que deseja jogar. Nessa tela serão listados todos os jogos que o emulador pôde encontrar no arquivo programs.txt, além dos que foram encontrados por meio da busca do sistema do dispositivo. Selecione um jogo e ele será iniciado automaticamente.
+ 
+{uEntrada de joypad}
+As teclas do dispositivo são usadas para realizar a navegação. Os botões do Gameboy são emulados pelas seguintes teclas:
+- Botão do Gameboy 'A': "a" ou "1"
+- Botão do Gameboy 'B': "b" ou "3"
+- Botão do Gameboy 'Select': Enter ou "7"
+- Botão do Gameboy 'Start': Espaço ou "9"
+ 
+{uConfigurações do emulador}
+Para detalhes da configuração do emulador, por favor visite a página Wiki de ajuda do projeto em {hhttp://sourceforge.net/apps/mediawiki/javagb/index.php?title=JMEBoy_Online_Help}
+ 
+{uInformações adicionais}
+Através do comando 'Exibir log' você poderá consultar os avisos e as mensagens adicionais geradas pelo emulador. Estarão listadas também as mensagens relacionadas à performance em comparação com um Gameboy verdadeiro.
+ 
+Divirta-se com o emulador!}

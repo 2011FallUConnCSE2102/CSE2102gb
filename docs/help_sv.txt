@@ -1,0 +1,28 @@
+{-{bJMEBoy hjälp}
+ 
+{uGöra spelen tillgängliga för emulatorn}
+Före du kan köra ett Gameboyspel måste du tala om för emulatorn vilka spel som finns tillgängliga på den mobila enheten. Till skillnad från en PC kan inte en J2MEbaserad mobil enhet enkelt använda sig av enhetens filsystem för att ladda ett spel.
+Om din mobila enhet stödjer specifikationen JSR-75 (Filåtkomst och PIM API) så behöver du endast söka igenom din mobil efter gameboyspel för att du ska kunna spela. Detta behöver du endast göra en gång, eller efter att du lagt till fler spel till enheten. Sökningen utförs genom att klicka på 'Startmapp för sökning av filsystem', vilken finns tillgänglig om din mobil stödjer tidigare nämnda javaspecifikation. Följande filändelser stöds för närvarande: .gb, .gbc och .cgb.
+Om din enhet inte stöder JSR-75 måste då utföra lite mer manuellt arbete, men det behöver bara göras en gång. För att emulatorn ska hitta spelen måste du modifiera JMEboys JARfil. En huvudmapp "programs" måste skapas och alla Gameboy ROMfiler måste läggas till i denna mapp. Det ska även finnas en fil "programs.txt" i mappen där namnet på alla ROMfiler måste finnas med, ett namn per rad. Denna mdoifierade JARfil måste sedan installeras på den mobila enheten.
+ 
+{uAtt ladda och starta ett spel}
+## denna rad bort! men endast detta kvar nu!
+Du kan ladda ett spel via 'Ladda spel' i menyn eller via Spelaknappen. Detta öppnar en dialogruta där du kan markera det Gameboyspel du vill spela. I dialogrutan listas alla spel som emulatorn kunde hitta i 'programs.txt' samt de spel som hittades via genomsökningen av mobilens filsystem. När väljer ett spel startas det automatiskt.
+ 
+{uJoypad}
+Den mobila enhetens navigationsknappar används för joypademulation. Gameboyens knappar emuleras av följande knappar:
+- Gameboyknapp 'A': "a" eller "1"
+- Gameboyknapp 'B': "b" eller "3"
+- Gameboyknapp 'Select': Enter eller "7"
+- Gameboyknapp 'Start': Mellanslag eller "9"
+ 
+{uEmulatorinställningar}
+För mer detaljerade intruktioner om hur man konfigurerar JMEboy, besök projektets Wiki på
+{hhttp://sourceforge.net/apps/mediawiki/javagb/index.php?title=JMEBoy_Online_Help}
+ 
+{uDiverse}
+Via 'Visa logg' kan du titta på emulatorns varnings- och informationsmeddelanden. Där finns också jämförelser av emulatorns prestanda med en "riktig" Gameboy.
+ 
+Ha så skoj med emulatorn!}
+
+ 	  	 

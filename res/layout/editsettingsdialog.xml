@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:background="@android:drawable/box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dlg_frameSkip" />
+		<RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/frameskip">
+       		<RadioButton android:text="1" android:id="@+id/fs1" />
+	       	<RadioButton android:text="2" android:id="@+id/fs2" />
+    	   	<RadioButton android:text="3" android:id="@+id/fs3" />
+       		<RadioButton android:text="4" android:id="@+id/fs4" />
+       		<RadioButton android:text="5" android:id="@+id/fs5" />
+	    </RadioGroup>	
+		<TextView android:background="@android:drawable/box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dlg_antialiasing"/>
+		<CheckBox android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/antialiasingActive" android:text="@string/dlg_active" />
+		<TextView android:background="@android:drawable/box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dlg_sound"/>
+		<CheckBox android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/soundActive" android:text="@string/dlg_active" />
+		<TextView android:background="@android:drawable/box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/orientationSensorActiveText" android:text="@string/dlg_orientationSensor"/>
+		<CheckBox android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/orientationSensorActive" android:text="@string/dlg_active" />
+		<LinearLayout xmlns:id="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		    <Button android:id="@+id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" />
+	    </LinearLayout>
+	</LinearLayout>
+</ScrollView>

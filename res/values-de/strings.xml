@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidBoy</string>
+    
+    <string name="menu_loadCartridge">Modul laden...</string>
+    <string name="menu_settings">Einstellungen...</string>
+    <string name="menu_showLog">Log-Datei anzeigen</string>
+    <string name="menu_about">Über</string>
+    <string name="menu_help">Hilfe (online)</string>
+    <string name="menu_exit">Beenden</string>
+    <string name="menu_pause">Pause</string>
+    <string name="menu_resume">Fortsetzen</string>
+    <string name="menu_quitGame">Spiel beenden</string>
+
+    <string name="title_logMessages">Log-Meldungen</string>
+    <string name="title_about">Über</string>
+    <string name="title_warning">Warnung</string>
+    <string name="title_cartridgeLoaded">Modul geladen</string>
+    
+    <string name="msg_about">AndroidBoy 1.0.7\nCopyright 2008-2009 by Jörg Jahnke.\nDieses Programm ist Freeware für nicht-kommerziellen Einsatz wird ohne Gewährleistung geliefert.</string>
+    <string name="msg_couldNotInitialize">Der Emulator konnte nicht initialisiert werden! Die Fehlermeldung lautet:\n</string>
+    <string name="msg_notImplemented">Diese Funktionalität ist noch nicht implementiert!</string>
+    <string name="msg_cartridgeLoaded">Das gewählte Modul '#' wurde erfolgreich geladen</string>
+    <string name="msg_cartridgeNotLoaded">Das gewählte Modul '#' konnte nicht geladen werden! Die Fehlermeldung lautet: </string>
+    <string name="msg_gameNotSave">Das Spiel konnte nicht gespeichert werden! Die Fehlermeldung lautet: </string>
+    <string name="msg_helpNotDisplayed">Die Online-Hilfe konnte nicht geladen werden! Die Fehlermeldung lautet: </string>
+
+    <string name="dlg_sound">Sound</string>
+    <string name="dlg_active">An</string>
+    <string name="dlg_frameSkip">Jedes # Bild anzeigen</string>
+    <string name="dlg_orientationSensor">Ausrichtungssensor nutzen</string>
+    <string name="dlg_antialiasing">Antialiasing nutzen</string>
+</resources>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidBoy</string>
+    
+    <string name="menu_loadCartridge">Load cartridge...</string>
+    <string name="menu_settings">Edit settings...</string>
+    <string name="menu_showLog">Show log</string>
+    <string name="menu_about">About</string>
+    <string name="menu_help">Help (online)</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_pause">Pause</string>
+    <string name="menu_resume">Resume</string>
+    <string name="menu_quitGame">Quit playing this game</string>
+
+    <string name="title_logMessages">Log messages</string>
+    <string name="title_about">About</string>
+    <string name="title_warning">Warning</string>
+    <string name="title_cartridgeLoaded">Cartridge loaded</string>
+    
+    <string name="msg_about">AndroidBoy 1.0.7\nCopyright 2008-2009 by Jörg Jahnke.\nThis program is freeware for non-commercial use and is distributed without any warranties.</string>
+    <string name="msg_couldNotInitialize">Could not initialize emulator! The error message was:\n</string>
+    <string name="msg_notImplemented">This functionality is not yet implemented!</string>
+    <string name="msg_cartridgeLoaded">The selected cartridge '#' was loaded successfully</string>
+    <string name="msg_cartridgeNotLoaded">The selected cartridge '#' could not be loaded! The error was: </string>
+    <string name="msg_gameNotSave">The game could not be saved! The error was: </string>
+    <string name="msg_helpNotDisplayed">The Online-Help page could not be loaded! The error was: </string>
+
+    <string name="dlg_sound">Sound</string>
+    <string name="dlg_active">Active</string>
+    <string name="dlg_frameSkip">Show only every # frame</string>
+    <string name="dlg_orientationSensor">Use orientation sensor</string>
+    <string name="dlg_antialiasing">Use Antialiasing</string>
+</resources>

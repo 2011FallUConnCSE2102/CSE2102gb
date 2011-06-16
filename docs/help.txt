@@ -1,0 +1,24 @@
+{-{bJMEBoy help}
+ 
+{uMaking games available to the emulator}
+Before you can run a Gameboy game, you have to tell the emulator which games are available on the mobile device. Unlike a PC a J2ME-based mobile device cannot easily access the device's file system for loading a game.
+If your mobile device supports the specification JSR-75 (FileConnection and PIM API) then you can scan your mobile device for Gameboy games and then load these games. This needs to be done only once, or after you have loaded more games onto your device. Doing this scan is done via the menu item 'File-system search start directory', which is available if your device supports the aforementioned Java specification. The following file extensions are currently supported when loading programs: .gb, .gbc and .cgb.
+Should your device not support the JSR-75 specification then you have a little more work to do. But also in this case, then work has only to be done once. What needs to be done is modifying the JMEBoy jar file. A top-level directory "programs" has to be added and all Gameboy ROMs have to be added to this directory. Additionally a file "programs.txt" has to reside inside this directory and all ROMs filenames have to be listed in that file, each game in a new line. This modified jar file then has to be installed on the mobile device.
+ 
+{uLoading and starting a game}
+You can load a program using the 'Load cartridge' menu item or via the 'Play' button. This opens a dialog where you can select the Gameboy cartridge to play. This dialog lists all the games that the emulator could find in a programs.txt file plus the ones that were found via a search of the mobile device's file system. Selecting a game automatically starts it.
+ 
+{uJoypad input}
+The mobile device's navigation keys are used for joypad navigation. The Gameboy's buttons are emulated using the following keys:
+- Gameboy button 'A': "a" or "1"
+- Gameboy button 'B': "b" or "3"
+- Gameboy button 'Select': Enter or "7"
+- Gameboy button 'Start': Space or "9"
+ 
+{uEmulator settings}
+For details on the emulator settings, please visit the project's Wiki help page at {hhttp://sourceforge.net/apps/mediawiki/javagb/index.php?title=JMEBoy_Online_Help}
+ 
+{uMiscellaneous stuff}
+Using the 'Show log' command you may take a look at warnings and informational messages of the emulator. This also includes measurements about the emulator performance in comparison to a "real" Gameboy device.
+ 
+Enjoy the emulator!}

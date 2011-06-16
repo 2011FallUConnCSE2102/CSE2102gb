@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidBoy</string>
+    
+    <string name="menu_loadCartridge">Carregar cartucho...</string>
+    <string name="menu_settings">Editar configurações...</string>
+    <string name="menu_showLog">Exibir log</string>
+    <string name="menu_about">Sobre</string>
+    <string name="menu_help">Ajuda (online)</string>
+    <string name="menu_exit">Sair</string>
+    <string name="menu_pause">Pausar</string>
+    <string name="menu_resume">Reiniciar</string>
+    <string name="menu_quitGame">Parar de jogar este jogo</string>
+
+    <string name="title_logMessages">Mensagens de log</string>
+    <string name="title_about">Sobre</string>
+    <string name="title_warning">Atenção</string>
+    <string name="title_cartridgeLoaded">Cartucho carregado</string>
+    
+    <string name="msg_about">AndroidBoy 1.0.7\nCopyright 2008-2009 by Jörg Jahnke.\nEste programa é livre para uso não comercial e é distribuído sem nenhuma garantia.</string>
+    <string name="msg_couldNotInitialize">Não foi possível iniciar o emulador! Mensagem de erro:\n</string>
+    <string name="msg_notImplemented">Esta funcionalidade ainda não foi implementada!</string>
+    <string name="msg_cartridgeLoaded">O cartucho selecionado '#' foi carregado com sucesso</string>
+    <string name="msg_cartridgeNotLoaded">O cartucho selecionado '#' não pôde ser carregado! Erro: </string>
+    <string name="msg_gameNotSave">O jogo não pôde ser salvo! Erro: </string>
+    <string name="msg_helpNotDisplayed">A página de ajuda online não pôde ser carregada! Erro: </string>
+
+    <string name="dlg_sound">Som</string>
+    <string name="dlg_active">Ativo</string>
+    <string name="dlg_frameSkip">Mostrar a cada # quadros</string>
+    <string name="dlg_orientationSensor">Usar sensor de orientação</string>
+    <string name="dlg_antialiasing">Usar Antialiasing</string>
+</resources>
